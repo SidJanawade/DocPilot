@@ -7,28 +7,7 @@ A **RAG agent over technical documentation** with hybrid retrieval, a tool-using
 ## Architecture
 
 ```
-question
-   |
-   v
-Agent router --> calculator tool (safe AST eval, no eval())
-   |         --> clarify (too-short questions)
-   v
-Semantic cache --hit--> cached answer
-   | miss
-   v
-Hybrid retrieval: BM25 + dense vectors --RRF--> reranker
-   |
-   v
-Guardrail 1: refuse if retrieval confidence is low
-   |
-   v
-LLM (Claude via Anthropic API, or offline extractive fallback)
-   |
-   v
-Guardrail 2: grounding check (answer must be supported by retrieved context)
-   |
-   v
-answer + citations + trace + latency  -->  /metrics (p50/p95, refusals, cache hits)
+![DocPilot Architecture](Arch.png)
 ```
 
 ## Evaluation results
