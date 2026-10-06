@@ -1,0 +1,19 @@
+{"q": "What is the difference between an image and a container?", "doc": "docker.md", "must": "running instance", "answerable": true}
+{"q": "Which Dockerfile instruction sets the base image?", "doc": "docker.md", "must": "FROM sets", "answerable": true}
+{"q": "How do I keep data after a container is removed?", "doc": "docker.md", "must": "named volume", "answerable": true}
+{"q": "How do services talk to each other in Compose?", "doc": "docker.md", "must": "service name", "answerable": true}
+{"q": "How do I make my production image smaller?", "doc": "docker.md", "must": "Multi-stage", "answerable": true}
+{"q": "What does a Deployment do in Kubernetes?", "doc": "kubernetes.md", "must": "ReplicaSet", "answerable": true}
+{"q": "How do I roll back a bad release?", "doc": "kubernetes.md", "must": "rollout undo", "answerable": true}
+{"q": "Which Service type is only reachable inside the cluster?", "doc": "kubernetes.md", "must": "ClusterIP", "answerable": true}
+{"q": "Are Kubernetes Secrets encrypted?", "doc": "kubernetes.md", "must": "base64", "answerable": true}
+{"q": "When does a readiness probe matter?", "doc": "kubernetes.md", "must": "receive traffic", "answerable": true}
+{"q": "What status code does FastAPI return for invalid request bodies?", "doc": "fastapi.md", "must": "422", "answerable": true}
+{"q": "Where is the Swagger UI documentation served?", "doc": "fastapi.md", "must": "/docs", "answerable": true}
+{"q": "Why shouldn't I run blocking code in an async endpoint?", "doc": "fastapi.md", "must": "stalls the loop", "answerable": true}
+{"q": "What is the capital of Australia?", "answerable": false}
+{"q": "How do I train a neural network with PyTorch?", "answerable": false}
+{"q": "Who won the 2018 football world cup?", "answerable": false}
+{"q": "How do I undo a bad deploy?", "doc": "kubernetes.md", "must": "rollout undo", "answerable": true}
+{"q": "How can I stop my app losing files when it restarts?", "doc": "docker.md", "must": "named volume", "answerable": true}
+{"q": "What happens when a request body has the wrong format?", "doc": "fastapi.md", "must": "422", "answerable": true}

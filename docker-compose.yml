@@ -1,0 +1,9 @@
+services:
+  docpilot:
+    build: .
+    ports: ["8000:8000"]
+    environment:
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY:-}
+      - DOCPILOT_EMBEDDER=${DOCPILOT_EMBEDDER:-hash}
+    volumes:
+      - ./data/docs:/srv/data/docs:ro   # drop your own .md docs here, restart to re-index
