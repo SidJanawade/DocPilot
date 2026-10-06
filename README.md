@@ -6,9 +6,7 @@ A **RAG agent over technical documentation** with hybrid retrieval, a tool-using
 
 ## Architecture
 
-```
-![DocPilot](Arch.png)
-```
+![DocPilot Architecture](./Arch.png)
 
 ## Evaluation results
 
